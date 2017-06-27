@@ -3,18 +3,19 @@
 <title>Janne Productions</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3-theme-black.css">
+<link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body id="myPage">
 <!-- Navbar -->
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  <a onclick="scrlTo('myPage');" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Janne Productions</a>
+  <a onclick="scrlTo('team');" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a onclick="scrlTo('work');" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a onclick="scrlTo('contact');" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
  </div>
 
@@ -126,14 +127,15 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+  <p>Powered by <a class="w3-hover-text-green" href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div id="gtt" style="position:fixed;bottom:50px;z-index:9001;right:25px;" class="w3-tooltip">
+    <span class="w3-text w3-padding w3-gray w3-hide-small">Go To Top</span>
+    <a class="w3-button w3-theme" onclick="scrlTo('myPage')"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
 </footer>
 </body>
+<script src="JS/main.js"></script>
 </html>
 
 </body>
