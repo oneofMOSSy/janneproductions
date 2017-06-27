@@ -9,6 +9,21 @@ scrlTo = function(id) {
     });
 }
 
+// Show 'Go To Top' button on scroll.
+var gtt = document.getElementById("gtt");
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+		gtt.style.display = "block";
+
+    } else {
+
+		gtt.style.display = "none";
+
+		}
+}
+
 //
 // Jon, du måste ha med all JavaScript från din Template... -.-
 //
@@ -36,6 +51,7 @@ function openNav() {
     }
 }
 
+gtt.style.display = "none";
 
 console.log("'Main.js' loaded.");
 console.log('Found any problems or security flaws with this page? Open an issue here: https://github.com/oneofMOSSy/janneproductions/issues');
